@@ -1,0 +1,19 @@
+
+.controls {
+    margin-left: 0px;
+    text-align: left;
+}
+
+@media (min-width: 1200px) {
+    .controls > p > .radio {
+        margin-left: 120px;
+    }
+}
+
+#dlyRadio {
+    display: none;
+}
+
+#wkyRadio {
+    display: none;
+}

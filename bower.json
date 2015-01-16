@@ -1,0 +1,28 @@
+{
+  "name": "radioButton",
+  "dependencies": {
+    "cssloader": "~1.0.0"
+  },
+  "version": "0.0.1",
+  "authors": [
+    "hunter hodnett <hchodnett@gmail.com>"
+  ],
+  "description": "Dynamically constructs radio buttons within an HTML document.",
+  "main": "radioButton.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "radio",
+    "button",
+    "radioButton"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

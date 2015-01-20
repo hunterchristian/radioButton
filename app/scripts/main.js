@@ -10,23 +10,23 @@
  */
 requirejs.config({
                    // By default load any module IDs from js/bower_components for easier loading of third-party files
-                   baseUrl: '../../components',
+                   baseUrl: '../../bower_components',
                    // Except if the file begins with any of the names listed here.
                    // In that case, RequireJS will load this path (relative to the
                    // baseUrl).
                    paths  : {
                      // JQuery and JQuery UI
-                     jquery   : 'jquery/jquery',
+                     jquery   : 'jquery/dist/jquery',
                      // THD styled radio button
-                     radioBtn : 'radioButton/radioButton',
+                     radioBtn : '../app/scripts/radioButton',
                      // THD stylesheets
-                     styles   : 'radioButton/radioButtonStyles',
+                     styles   : '../app/scripts/radioButton/radioButtonStyles',
                      // Stylesheet loader
-                     cssLoader: 'cssLoader/js/cssLoader',
+                     cssLoader: 'cssLoader/js/cssLoader'
                    }
                  });
 
 require(['radioBtn', 'styles'], function (radioButton) {
-  radioButton.init($('#vendorRadioRow input[type=radio]'));
+  radioButton.init($('#vendorRadioRow').find($('input[type=radio]')));
 });
 //@ sourceURL=radioButtonMain.js
